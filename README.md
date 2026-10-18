@@ -1,14 +1,14 @@
 # Land Cleared by Humanitarian Demining in Colombia, Before and After the 2016 Peace Agreement
 
-A statistical analysis in Python of Colombia's official record of humanitarian demining results (5,721 records, 2004–2023), testing whether more land was cleared each month after the 2016 peace agreement than before it.
+A statistical analysis in Python of Colombia's official record of humanitarian demining results (5,721 records, 2004–2023), testing whether more land was cleared per month after the 2016 peace agreement than before it.
 
 I chose this question because, in my experience in humanitarian mine action, clearance can go on during a war but is far more effective in peace. Cleared land is not mined again behind the teams, deminers work with more safety and security, and security forces no longer needed for the fighting can take on peace support work such as clearance. This is the second project of my AI capstone on humanitarian mine action.
 
 ## Result
-The median month cleared 31,722 m² of land in 2010–2016 and 118,107 m² in 2017–2023, about 3.7 times as much. A two-sided Mann–Whitney U test, set out before it was run, found the difference significant (U = 6,314, p < 0.001, rank-biserial correlation 0.79), and the same test on yearly totals agreed (exact p = 0.0006). The data show the rise, not its cause: the number of operators also doubled after 2016.
+The median month cleared 31,722 m² of land in 2010–2016 and 118,107 m² in 2017–2023, about 3.7 times as much. A two-sided Mann–Whitney U test, set out before it was run, found the difference significant (U = 6,314, p < 0.001, rank-biserial correlation 0.79), and the same test on yearly totals agreed (exact p = 0.0006), as did two checks added after the plan: a Brunner–Munzel test, and the test without the three months that have no record. The data show the rise, not its cause.
 
 ## What's in this repository
-- `analysis.ipynb`: data checks, descriptive statistics, three visual models and their comparison, the hypothesis test and a summary.
+- `analysis.ipynb`: data checks, descriptive statistics, three visual models and their comparison, the hypothesis test with its checks, and a summary.
 - `desminado_humanitario.csv`: the raw dataset, unchanged.
 - `figures/`: the three charts, written by the notebook.
 - `Statistical_Analysis_Report.pdf` and `module_summary.pdf`: the report. The two files are identical; the brief uses both names.
